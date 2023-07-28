@@ -74,7 +74,6 @@ calcAge(20)
 
 
 //7 Create a function that takes an array of numbers and returns the smallest number in the set.
-
 function findSmallestNum(x){
     let smallestNum = Math.min(...x)
     console.log(smallestNum);
@@ -91,7 +90,6 @@ function returnNegative(x){
     console.log( -Math.abs(x));
 }
 returnNegative(4)
-
 returnNegative(15)
 
 
