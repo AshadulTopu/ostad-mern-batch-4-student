@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+    <style>
+        button{
+            font-size: 20px;
+            padding: 20px 30px;
+            cursor: pointer;
+        }
+        img{
+            max-width: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="changeImg1()">prev</button>
+        <button onclick="changeImg2()">next</button>
+    </div>
+    <img src="img1.jpg" alt="">
+    <script>
+        function changeImg1(){
+            document.getElementsByTagName('img')[0].src = 'img1.jpg'
+        }
+        function changeImg2(){
+            document.getElementsByTagName('img')[0].src = 'img2.jpg'
+        }
+    </script>
+</body>
+</html>
