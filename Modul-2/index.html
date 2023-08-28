@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+
+    let URL="https://crud.teamrabbil.com/api/v1/ReadProduct"
+
+    // Using Fetch Async-Await
+    RequestUsingAsync();
+    async function RequestUsingAsync() {
+      let res= await fetch(URL);
+      let jsonData=await res.json();
+      document.write(JSON.stringify(jsonData));
+    }
+
+
+    // Using Fetch Primises
+    RequestUsingPromises();
+    function RequestUsingPromises() {
+       fetch(URL)
+           .then(res=>res.json())
+           .then(jsonData=>document.write(JSON.stringify(jsonData)))
+    }
+
+
+
+    // Using Axios Async-Await
+     AsyncUsingAxios();
+     async function AsyncUsingAxios() {
+         let res = await axios.get(URL);
+         let jsonData = res.data;
+         document.write(JSON.stringify(jsonData))
+
+     }
+
+    // Using Axios Promises
+    AxiosUsingPromises();
+    function AxiosUsingPromises() {
+        axios.get(URL)
+            .then(res=>res.data)
+            .then(jsonData=>document.write(JSON.stringify(jsonData)))
+    }
+
+
+
+    // Using Axios Promises But Only One Then Block
+    SimpleAxiosGet();
+    function SimpleAxiosGet(){
+        axios.get(URL).then((res)=>{
+            let jsonData=res.data;
+            document.write(JSON.stringify(jsonData));
+        });
+    }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
