@@ -2,6 +2,6 @@
 
 const app = require('./app')
 
-app.listen(300,()=>{
+app.listen(3000,()=>{
     console.log('server run success');
 })
