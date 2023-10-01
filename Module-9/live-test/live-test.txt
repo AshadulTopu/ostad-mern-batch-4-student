@@ -1,0 +1,47 @@
+// 01. What is the purpose of the db.hostInfo() method in MongoDB?
+// db.hostInfo() method is used to get information about the host on which the MongoDB server is running.
+
+// 02. Is it possible to change the current database using the db.getName() method?
+// No, it is not possible to change the current database using the db.getName() method
+
+// 03. What is the data type of the value returned by the db.getName() method?
+// db.getName() method returns a string data type. It provides the name of the current database as a string value.
+
+
+// 04. How can I use the db.dropDatabase() method to delete a database in MongoDB?
+// var db = db.getSiblingDB('your_database_name');
+// db.dropDatabase();
+
+
+// 05. What is the data type of the result returned by db.getCollectionNames()?
+// db.getCollectionNames() method returns a list of collection names as an array of strings
+
+
+// 06. What is the purpose of the db.getCollectionNames() method in MongoDB?
+// db.getCollectionNames() method is used to get a list of collection names in a database
+
+
+// 07. How you can get server statistics and information in MongoDB?
+// db.serverStats()
+
+
+// 08. Which method in MongoDB is used to retrieve the version of the MongoDB?
+// db.version()
+
+
+// 09. Which method is used to delete a collection from the database?
+// db.collectionName.drop();
+
+// 10. How to Insert a single document into a collection?
+// db.collectionName.insert({your_document});
+
+
+// 11. Describe what the find() method does.
+// The find() method is used to find documents in a collection.
+// The find() method takes a query object as a parameter and returns a cursor object.
+
+
+
+// 12. What is $regex and how to use it?
+// The $regex operator is used to match a string against a regular expression.
+// db.collection.find({ fieldName: { $regex: /example/i } })
