@@ -1,0 +1,39 @@
+.section-area {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header,
+.hero,
+.about, 
+.services,
+.project,
+.footer{
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.header{
+  background: rosybrown;
+}
+.hero{
+  background: saddlebrown;
+}
+.about{
+  background: chocolate;
+}
+.services{
+  background: sandybrown;
+}
+.project{
+  background: lightcoral;
+}
+.footer{
+  background: darkorange;
+}
+
+h2, p{
+  color: #fff;
+  text-align: center;
+}
