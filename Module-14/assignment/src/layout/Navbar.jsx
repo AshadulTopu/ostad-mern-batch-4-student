@@ -61,7 +61,6 @@ const Navbar = (props) => {
               <button className="btn bg-transparent border-green-500 rounded-md text-black">Login</button>
               <button className="btn bg-green-500 border-none rounded-md text-white">Register</button>
             </div>
-            {/* <a className="btn">Button</a> */}
           </div>
         </div>
       </div>

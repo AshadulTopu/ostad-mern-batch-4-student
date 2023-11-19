@@ -118,29 +118,7 @@
   "footer": {
     "logo": "WEB LOGO",
     "description": "Some footer text about the  Agency. Just a little description to help people understand you better",
-    "social": [
-      {
-        "icon": "faFacebookF",
-        "link": "#",
-        "title": "Facebook"
-      },
-      {
-        "icon": "faInstagram",
-        "link": "#",
-        "title": "Instagram"
-      },
-      {
-        "icon": "faLinkedinIn",
-        "link": "#",
-        "title": "LinkedinIn"
-      },
-      {
-        "icon": "faTwitter",
-        "link": "#",
-        "title": "Twitter"
-      }
-    ],
-    "link-title": "Quick Links",
+    "linkTitle": "Quick Links",
     "links": [
       {
         "title": "About Us",
@@ -159,10 +137,11 @@
         "link": "#"
       }
     ],
-    "contact": [
-      "address",
-      "123 Street, New York, USA"
-    ],
+    "contact": ["address", "123 Street, New York, USA"],
     "copyright": "Copyright © 2023. All Rights Reserved."
+  },
+  "breadcrumb": {
+    "title" : "team",
+    "links" : ["home","team"]
   }
 }

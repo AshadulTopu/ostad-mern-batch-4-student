@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom';
 import {
   faFacebookF,
   faInstagram,
@@ -6,31 +7,31 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-const SocialLink = (porps) => {
+const SocialLink = () => {
 //   console.log(porps);
   return (
-    <div>
-      {porps.footer.map((item, index) => {
-        console.log(item);
-        return (
-          <a href={item.link} key={index} className="text-white">
-            <FontAwesomeIcon icon={item.icon} />
-          </a>
-        );
-      })}
-      {/* <a href={porps.footer.link} className="text-white">
+    <ul className="flex gap-4">
+      <li className="w-14 h-14 rounded-full bg-green-400 flex justify-center items-center text-2xl">
+      <Link to='/' className="text-white">
         <FontAwesomeIcon icon={faFacebookF} />
-      </a>
-      <a href={porps.footer.link} className="text-white">
+      </Link>
+      </li>
+      <li className="w-14 h-14 rounded-full bg-green-400 flex justify-center items-center text-2xl">
+      <Link to='/' className="text-white">
         <FontAwesomeIcon icon={faInstagram} />
-      </a>
-      <a href={porps.footer.link} className="text-white">
-        <FontAwesomeIcon icon={faLinkedinIn} />
-      </a>
-      <a href={porps.footer.link} className="text-white">
+      </Link>
+      </li>
+      <li className="w-14 h-14 rounded-full bg-green-400 flex justify-center items-center text-2xl">
+      <Link to='/' className="text-white">
         <FontAwesomeIcon icon={faTwitter} />
-      </a> */}
-    </div>
+      </Link>
+      </li>
+      <li className="w-14 h-14 rounded-full bg-green-400 flex justify-center items-center text-2xl">
+      <Link to='/' className="text-white">
+        <FontAwesomeIcon icon={faLinkedinIn} />
+      </Link>
+      </li>
+    </ul>
   );
 };
 
