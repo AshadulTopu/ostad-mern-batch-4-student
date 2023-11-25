@@ -1,10 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Pages/HomePage";
+import CreatePage from "./Pages/CreatePage";
+// import UpdatePage from "./Pages/UpdatePage";
+import Navbar from "./Components/Common/Navbar";
+
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold">Combine MERN Project Structure</h1>
-      <h1 className="text-3xl font-bold">React with vite and Tailwind</h1>
-      <h1 className="text-3xl font-bold">Vite + React + Tailwind</h1>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<CreatePage />} />
+        {/* <Route path="/update/:id" element={<UpdatePage />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 };
 
